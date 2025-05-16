@@ -1,0 +1,528 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #f4f4f4;
+  position: relative;
+  padding-top: 39px;
+  background-image: url('ChatGPT\ Image\ 14\ мая\ 2025\ г.\,\ 18_31_34.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Это сделает фон фиксированным при прокрутке */
+  background-color: rgba(0, 0, 0, 0.5); /* Темный фильтр для улучшения видимости текста */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #1a73e8;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #1a73e8;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+}
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #1a73e8;
+    font-family: 'Oswald', sans-serif;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #747474;
+}
+
+#header {
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+#header p {
+  color: #f5f5f5;
+}
+
+
+.header-image {
+  border-radius: 20px;
+  width: 150px; /* Ограничиваем ширину картинки */
+  height: 150px;
+  margin-bottom: 0px; /* Отступ снизу */
+}
+.lang-btn {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+}
+.lang-btn:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1);
+  color: #1a73e8;
+}
+.language-switcher {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  z-index: 1100; /* выше, чем у nav */
+  display: flex;
+  gap: 5px;
+}
+
+
+.wave {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 40px;
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.section-1 {
+  background-color: #252733;
+  background: linear-gradient(to bottom, #252733, #27293d);
+}
+.section-2 {
+  background-color: #27293d;
+  background: linear-gradient(to bottom, #27293d, #2e304a);
+}
+.section-3 {
+  background-color: #2e304a;
+  background: linear-gradient(to bottom, #2e304a, #3b3e5a);
+}
+.section-4 {
+  background-color: #3b3e5a;
+  background: linear-gradient(to bottom, #3b3e5a, #474b6b);
+}
+.section-5 {
+  background-color: #474b6b;
+  background: linear-gradient(to bottom, #474b6b, #4f5275);
+}
+
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1);
+  color: #1a73e8;
+}
+
+.navigation {
+  background-color: #e6e6e6;
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #ccc;
+}
+
+.navigation-a ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* ключевая строчка */
+  justify-content: center;
+  gap: 10px;
+}
+.navigation-a ul li {
+  margin: 0;
+}
+.navigation-a ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+.navigation-a ul li a:hover {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+
+#about h2 {
+  padding: 40px 0px 15px 0px;
+  text-align: center;
+}
+#about-card {
+  border-radius: 20px;
+  background-color: transparent;
+  border: 0.5px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+}
+#about-flex {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+
+#uslugi h2 {
+  padding: 40px 0px 15px 0px;
+  text-align: center;
+}
+#uslugi h3 {
+  line-height: 1.1;
+  padding-bottom: 8px;
+}
+#uslugi-card {
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+}
+#uslugi-grid {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1100px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+
+#otzivi h2 {
+  padding: 40px 0px 15px 0px;
+  text-align: center;
+}
+#otzivi-card {
+  border-radius: 20px;
+  background-color: transparent;
+  border: 0.5px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+  position: relative;
+}
+#otzivi-card:nth-child(1) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(1\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(2) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(2\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(3) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(8\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(4) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(3\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(5) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(9\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(6) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(4\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(7) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(10\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(8) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(5\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(9) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(11\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(10) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(12\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(11) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(6\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(12) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(13\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(13) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(16\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(14) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(14\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(15) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(7\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card:nth-child(16) #otzivi-ava {
+  background-image: url(uifaces-popular-image\ \(15\).jpg);
+  background-size: 40px 40px;
+}
+#otzivi-card h4 {
+  position: absolute;
+  top: 35px;
+  left: 65px;
+}
+#otzivi-card p {
+  margin-top: 5px;
+}
+#otzivi-ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #1a73e8;
+}
+#otzivi-flex {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1100px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#cta h2 {
+  padding: 40px 0px 5px 0px;
+  text-align: center;
+}
+#cta p {
+  text-align: center;
+}
+input {
+  outline: none;
+}
+#cta-card {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0px 10px;
+    outline: none;
+}
+#cta-card label {
+  display: block; /* Делает label блочным элементом */
+  margin-bottom: 5px; /* Отступ снизу, чтобы метка не сливалась с полем */
+  font-weight: bold;
+}
+#cta-card input {
+  background-color: transparent;
+}
+#cta-card input::placeholder {
+  text-align: center;
+}
+#cta-btn {
+    background: #FF4500;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#cta-cancel-btn {
+  background: #b0b0b0;
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#cta-grid {
+  display: grid;
+  grid-template-areas: 
+  'name age'
+  'num email';
+  gap: 15px;
+  max-width: 1100px;
+  justify-content: center;
+  margin: 0px auto;
+
+}
+#cta-grid:nth-child(1) {
+  grid-area: name;
+}
+#cta-grid:nth-child(2) {
+  grid-area: age;
+}
+#cta-grid:nth-child(3) {
+  grid-area: num;
+}
+#cta-grid:nth-child(4) {
+  grid-area: email;
+}
+
+footer {
+  padding-top: 40px;
+  background: linear-gradient(to bottom, #9e9e9e, #919191);
+}
+footer p {
+  color: #222222;
+}
+#footer {
+  position: relative;
+}
+#footer-flex {
+  display: flex;
+  padding: 20px;
+  width: 42%;
+}
+#footer-contact {
+  padding-right: 15px;
+}
+#footer-logo-name {
+  width: 26%;
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+#footer-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(Buildmax_logo_50x50.png);
+  background-size: cover;
+  border-radius: 30px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+#footer-prava{
+  border-top: 0.5px solid rgb(119, 119, 119);
+  padding: 10px 20px 0px 20px;
+}
+
+#footer-prava-a {
+  display: flex;
+}
+#footer-prava-a a:hover {
+  transform: none;
+  text-decoration: none;
+}
+
+#about-card, #uslugi-card, #otzivi-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about-card:hover, #uslugi-card:hover, #otzivi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .language-switcher {
+    top: 70px;
+    right: 10px;
+  }
+
+  #logo {
+    font-size: 28px;
+  }
+
+  .navigation-a ul li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  /* Секции */
+  #about-flex,
+  #uslugi-grid,
+  #otzivi-flex {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+
+  #about-card,
+  #uslugi-card,
+  #otzivi-card {
+    width: 90%;
+  }
+
+  /* Форма */
+  #signup-form input,
+  #signup-form textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Подвал */
+  #footer-flex {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #footer-logo-name {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #footer-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px auto;
+  }
+
+  #footer-name h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #footer-prava-a {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #footer-prava-a p {
+    display: none;
+  }
+}
+
