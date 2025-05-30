@@ -1,0 +1,705 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 50px;
+    background-image: url('ChatGPT Image 14 мая 2025 г., 18_31_34.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #1a73e8;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1a73e8;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #1a73e8;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-image {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    z-index: 1100;
+}
+
+.lang-btn {
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 3px;
+}
+
+.lang-btn:hover {
+    text-decoration: underline;
+    color: #1a73e8;
+}
+
+.wave {
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+section {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.section-1 {
+    background: linear-gradient(to bottom, #252733, #27293d);
+}
+
+.section-2 {
+    background: linear-gradient(to bottom, #27293d, #2e304a);
+}
+
+.section-3 {
+    background: linear-gradient(to bottom, #2e304a, #3b3e5a);
+}
+
+.section-4 {
+    background: linear-gradient(to bottom, #3b3e5a, #474b6b);
+}
+
+.section-5 {
+    background: linear-gradient(to bottom, #474b6b, #4f5275);
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    color: #1a73e8;
+}
+
+.navigation {
+    background-color: #e6e6e6;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ccc;
+}
+
+.navigation-a ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-a ul li a {
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+}
+
+.navigation-a ul li a:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#about h2,
+#uslugi h2,
+#otzivi h2,
+#cta h2 {
+    padding: 20px 0 10px;
+}
+
+#about-flex,
+#uslugi-grid,
+#otzivi-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-card,
+#uslugi-card,
+#otzivi-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-card:hover,
+#uslugi-card:hover,
+#otzivi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#otzivi-card {
+    position: relative;
+    text-align: left;
+}
+
+#otzivi-ava {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+#otzivi-card h4 {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+
+#otzivi-card p {
+    margin-top: 15px;
+}
+
+#otzivi-card:nth-child(1) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(1\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(2) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(2\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(3) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(8\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(4) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(3\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(5) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(9\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(6) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(4\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(7) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(10\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(8) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(5\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(9) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(11\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(10) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(12\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(11) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(6\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(12) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(13\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(13) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(16\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(14) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(14\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(15) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(7\).jpg);
+    background-size: 40px 40px;
+}
+#otzivi-card:nth-child(16) #otzivi-ava {
+    background-image: url(uifaces-popular-image\ \(15\).jpg);
+    background-size: 40px 40px;
+}
+
+#cta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cta-card {
+    width: 100%;
+    max-width: 280px;
+    padding-top: 15px;
+}
+
+#cta-card label {
+    display: block;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 5px;
+}
+
+#cta h2 {
+    padding-bottom: 5px;
+}
+
+#cta-card input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+}
+
+#cta-card input::placeholder {
+    color: #bbbbbb;
+    text-align: left;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+#cta-btn,
+#cta-cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cta-btn {
+    background: #FF4500;
+    color: white;
+}
+
+#cta-cancel-btn {
+    background: #b0b0b0;
+    color: #2b2b2b;
+}
+
+.success-message, .error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #474b6b, #4f5275);
+    color: #1a73e8;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #444;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.success-message p, .error-message p {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1a73e8;
+}
+
+.success-message button, .error-message button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b0b0b0;
+    color: #2b2b2b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success-message button:hover, .error-message button:hover {
+    background-color: #a0a0a0;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    padding-top: 40px;
+    background: linear-gradient(to bottom, #9e9e9e, #919191);
+}
+footer p {
+    color: #222222;
+}
+#footer {
+    position: relative;
+}
+#footer-flex {
+    display: flex;
+    padding: 20px;
+    width: 42%;
+}
+#footer-contact {
+    padding-right: 15px;
+}
+#footer-logo-name {
+    width: 26%;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+#footer-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(Buildmax_logo_50x50.png);
+    background-size: cover;
+    border-radius: 30px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+#footer-prava {
+    border-top: 0.5px solid rgb(119, 119, 119);
+    padding: 10px 20px 0px 20px;
+}
+
+#footer-prava-a {
+    display: flex;
+}
+#footer-prava-a {
+    color: #222222;
+}
+
+#footer-prava-a a:hover {
+    transform: none;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+
+    .navigation {
+        padding: 5px 0;
+    }
+
+    .navigation-a ul {
+        gap: 5px;
+    }
+
+    .navigation-a ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .section-1 {
+        padding-top: 60px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #header {
+        padding: 15px;
+        position: relative;
+    }
+
+    .header-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .language-switcher {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        z-index: 1100;
+    }
+
+    .lang-btn {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    .wave {
+        height: 40px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    #about-card,
+    #uslugi-card,
+    #otzivi-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    #otzivi-ava {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    #otzivi-card h4 {
+        position: absolute;
+        top: 25px;
+        left: 70px;
+    }
+
+    #otzivi-card p {
+        margin-top: 15px;
+    }
+
+    #cta-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cta-card {
+        max-width: 100%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cta-btn,
+    #cta-cancel-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .success-message, .error-message {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .success-message p, .error-message p {
+        font-size: 14px;
+    }
+
+    .success-message button, .error-message button {
+        padding: 5px 10px;
+    }
+
+    #footer-flex {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #footer-contact {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #footer-adress {
+        text-align: center;
+    }
+
+    #footer-logo-name {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #footer-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    #footer-name h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #footer-prava {
+        text-align: center;
+    }
+
+    #footer-prava-a {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-prava-a p {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    .header-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+
+    .lang-btn {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .navigation-a ul li a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .wave {
+        height: 30px;
+    }
+
+    section {
+        padding: 15px 8px;
+    }
+
+    #otzivi-ava {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    #otzivi-card h4 {
+        position: absolute;
+        top: 25px;
+        left: 70px;
+    }
+
+    #otzivi-card p {
+        margin-top: 15px;
+    }
+}
